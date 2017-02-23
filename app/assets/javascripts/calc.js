@@ -1,7 +1,10 @@
 
 function add(number){
-  var printout = parseInt(document.getElementById("printout").innerHTML) + number;
-  document.getElementById("printout").innerHTML = sum;
-   
-
+  var printout = document.getElementById("printout");
+  if (number==="Reset"){
+    printout.innerHTML = 0;
+  }else{
+    printout.innerHTML = parseInt(printout.innerHTML) + number;
+  }
+  
 }
